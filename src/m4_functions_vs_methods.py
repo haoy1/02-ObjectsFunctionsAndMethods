@@ -137,6 +137,14 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    try_methods_turtle = rg.SimpleTurtle('square')
+    try_methods_turtle.pen = rg.Pen('brown',5)
+
+    try_methods_turtle.forward(150)
+    try_methods_turtle.left(90)
+    try_methods_turtle.forward(50)
+    try_methods_turtle.backward(100)
+
     ###########################################################################
     # TODO: 3. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
@@ -151,6 +159,12 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
+
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,500,100,100)
+
+
     ###########################################################################
     # TODO: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
@@ -195,6 +209,26 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+    try_methods_and_functions_turtle = rg.SimpleTurtle('square')
+    try_methods_and_functions_turtle.pen = rg.Pen('blue',5)
+    try_methods_and_functions_turtle.backward(150)
+    try_methods_and_functions_turtle.speed = 1
+    draw_many_squares(try_methods_and_functions_turtle, 2, 100, 30)
+
+    try_methods_and_functions_turtle.pen = rg.Pen('red', 5)
+    try_methods_and_functions_turtle.backward(150)
+    try_methods_and_functions_turtle.speed = 5
+    draw_many_squares(try_methods_and_functions_turtle, 10, 50, 15)
+
+    try_methods_and_functions_turtle.pen = rg.Pen('red', 35)
+    try_methods_and_functions_turtle.backward(150)
+    try_methods_and_functions_turtle.speed = 100
+    draw_many_squares(try_methods_and_functions_turtle, 8, 300, 60)
+
+    try_methods_and_functions_turtle.pen = rg.Pen('black', 3)
+    try_methods_and_functions_turtle.backward(200)
+    try_methods_and_functions_turtle.draw_circle(30)
+    try_methods_and_functions_turtle.draw_square(50)
     ###########################################################################
     # TODO: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.

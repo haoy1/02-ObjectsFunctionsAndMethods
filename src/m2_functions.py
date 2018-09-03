@@ -3,8 +3,8 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Brandon Hao.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
@@ -19,14 +19,15 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 import rosegraphics as rg
-
+import math
 
 def main():
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
-
+    ans=get_hypotenuse(5,12)
+    print(ans)
 
 ###############################################################################
 #
@@ -42,6 +43,8 @@ def main():
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+def get_hypotenuse(a,b):
+    return math.sqrt(a**2+b**2)
 
 
 ###############################################################################
